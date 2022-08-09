@@ -32,6 +32,8 @@ if opcion == '3':
     try:#utilizo esta funcion para poder determinar cuando se ingrese datos incorrectos en esta seccion
         if est.status_code == 200: #espero el codigo 200 si el cambio fuen realizado correctamente
             print("Cambios realizados correctamente, en unos segundos se reflejara en el controlador.")
+        else:
+            print("Ha ocurrido un erro , ", est)
     except:
         print()
 else:
